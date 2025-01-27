@@ -1,0 +1,32 @@
+Which attribute is used to specify the URL in an anchor (<a>) tag?
+url,href, src, link 
+1
+What does HTML stand for?
+HyperText Markup Language,Hyper Transfer Makeup Language,Home Tool Markup Language,None of the above
+0
+What does CSS stand for?
+Cascading Style Sheets,Computer Style Sheets,Creative Style Sheets,Colorful Style Sheets
+0
+Which HTML tag is used to define an internal stylesheet?
+script,style,css,link
+1
+What is the correct HTML tag for inserting a line break?
+br,lb,break,newline
+0
+Which property is used in CSS to change the text color of an element?
+color, font-color, text-color, style-color
+0
+
+In JavaScript, what does document.getElementById() do?
+Selects an element by its class, Selects an element by its tag, Selects an element by its ID, Selects all elements
+2
+What is the default display property of a <div> element in CSS?
+block, inline, none, inline-block
+0
+
+What is the purpose of the alt attribute in an <img> tag?
+Specifies the image path, Provides alternative text for an image, Defines the image size, Links to another image
+1
+In JavaScript Why We use setInterval() function
+To display values,display some thing one time on screen,to repeate something in specific timeInterval,none of above
+2

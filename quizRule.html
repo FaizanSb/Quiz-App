@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Rules</title>
+    <link rel="stylesheet" href="displayRuleStyle.css">
+</head>
+<body>
+
+    <div id="header">
+    <span id="displayPlayer"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;   
+    <span id="displaySubject"></span>
+    </div>
+    
+    <h1>Quiz Rules </h1>
+
+    <p>There are 10 questions in the quiz</p>
+    <p>You have 15 seconds to answer each question.</p>
+    <p>Each correct answer is worth 1 point.</p>
+    <p>Once the quiz starts, the timer will run continuously, so stay focused!</p>
+    <p>You cannot change your answer once you have submitted it.</p>
+    <p>Your score will be displayed at the end of the quiz along with your percentage and remarks.</p>
+    <p id="luck">Best of Luck</p>
+
+    <button id="startQuiz">Start Quiz </button>
+
+    <script>
+
+        const selectedSubject = localStorage.getItem('selectedSubject');
+        const playerName = localStorage.getItem('playerName');
+        let subjectToDisplay;
+
+        switch(selectedSubject){
+            case "OperatingSystem":{
+                subjectToDisplay = "Operating System";
+                break;
+            }
+            case "LinearAlgebra":{
+                subjectToDisplay = "Linear Algebra";
+                break;
+            }
+            case "ProfessionalPractice":{
+                subjectToDisplay = "Professional Practice";
+                break;
+            }
+            case "WebDevelopement":{
+                subjectToDisplay = "Web Developement";
+                break;
+            }
+            case "communicationSkill":{
+                subjectToDisplay = "Communication Skills";
+                break;
+            }
+            default:{
+                console.log("Invalid Subject");
+            }
+        }
+
+
+        let displayPlayer = document.getElementById('displayPlayer');
+        let displaySubject = document.getElementById('displaySubject');
+        
+        displayPlayer.textContent = `Player Name: ${playerName}`;
+        displaySubject.textContent = `Subject Name: ${subjectToDisplay}`;
+        
+
+        document.getElementById('startQuiz').addEventListener('click',setValues);
+
+        function setValues(){
+
+            localStorage.setItem('selectedSubject',selectedSubject);
+            localStorage.setItem('playerName',playerName);
+            window.location.href = "quizStart.html"; 
+        }            
+       
+    </script>
+    
+</body>
+</html>

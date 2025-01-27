@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Start</title>
+    <link rel="stylesheet" href="/quizStartStyle.css">
+</head>
+<body>
+
+    <div id="header">
+        <span id="playerName"></span> 
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;
+        <span id="subjectDisplay"></span>
+    </div>
+    
+
+    <div id="alert"></div>
+    <h1>Select the Correct Option</h1>
+
+    <div class="quiz-container">
+
+        <span id="displayNumberOfQuestion"></span> 
+        <span class="question-display"></span>
+      
+        <span id="reverseSecond"></span>
+        <ul class="options"></ul>
+        <button class="submit-btn">Submit</button>
+       
+        
+    </div>
+
+    <div id="statusBar">
+       
+    <span id="totalQuestion" class="status"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="correctAnswer" class="status"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="incorrectAnswer" class="status"></span>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <span id="remaningQuestion" class="status"></span>
+    
+    </div>
+
+    <script src="/quizLogic.js"></script>    
+    
+</body>
+</html>

@@ -1,0 +1,105 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Display Player and Subject Info */
+#displayPlayer, #displaySubject {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f0f0f0;
+    margin: 20px;
+    display: inline-block;
+}
+
+/* Quiz Rules Section */
+h1 {
+    font-size: 2.2rem;
+    color: #4CAF50;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 10px 0;
+    text-align: justify;
+    padding-left: 350px;
+}
+
+/* Button Styling */
+#startQuiz {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 24px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+#startQuiz:hover {
+    background-color: #45a049;
+}
+
+/* Layout */
+#displayPlayer, #displaySubject {
+    margin-bottom: 20px;
+}
+
+#startQuiz {
+    display: inline-block;
+}
+
+#luck{
+    font-weight: bold;
+    color: green;
+   
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+
+    #startQuiz {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    #startQuiz {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    #displayPlayer, #displaySubject {
+        font-size: 1.2rem;
+    }
+}
+#header{
+    background-color: #27ae60;
+    color:aliceblue; 
+    margin-top: 10px;
+    padding: 0px 10px 10px 50px;
+}

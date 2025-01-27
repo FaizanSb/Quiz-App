@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Result</title>
+    <link rel="stylesheet" href="/displayResultStyle.css">
+</head>
+<body>
+
+    <h1>Student Result</h1>
+    
+    <h3 id="studentName"></h3>
+    <h3 id="subjectSelected"></h3>
+    <h3 id="totalQuestion"></h3>
+    <h3 id="correctQuestion"></h3>
+    <h3 id="incorrectQuestion"></h3>
+    <h3 id="percent"></h3>
+    <h3 id="remarks"></h3>
+
+    <button type="submit" id="back">Go Back</button>
+
+    
+    <script>
+        
+        const playerName = localStorage.getItem('playerName');       
+        const subjectName = localStorage.getItem('subjectName');
+        let totalQuestions = localStorage.getItem('totalQuestions');        
+        let correctAnswer = localStorage.getItem('correctAnswer');       
+        let incorrectAnswer = localStorage.getItem('incorrectAnswer');
+
+        let subjectToDisplay;
+
+        switch(subjectName){
+            case "OperatingSystem":{
+                subjectToDisplay = "Operating System";
+                break;
+            }
+            case "LinearAlgebra":{
+                subjectToDisplay = "Linear Algebra";
+                break;
+            }
+            case "ProfessionalPractice":{
+                subjectToDisplay = "Professional Practice";
+                break;
+            }
+            case "WebDevelopement":{
+                subjectToDisplay = "Web Developement";
+                break;
+            }
+            case "communicationSkill":{
+                subjectToDisplay = "Communication Skills";
+                break;
+            }
+            default:{
+                console.log("Invalid Subject");
+            }
+        }
+
+       
+        let displayPlayerName = document.getElementById('studentName');
+        let displaySubjectName = document.getElementById('subjectSelected')
+        let displayTotalQuestion = document.getElementById('totalQuestion');
+        let displayCorrectAnswer = document.getElementById('correctQuestion');
+        let displayIncorrectAnswer = document.getElementById('incorrectQuestion');
+
+        displayPlayerName.textContent = `Player Name: ${playerName}`;
+        displaySubjectName.textContent = `Subject: ${subjectToDisplay}`;
+        displayTotalQuestion.textContent = `Total Questions: ${totalQuestions}`;
+        displayCorrectAnswer.textContent = `Correct Answers: ${correctAnswer}`;
+        displayIncorrectAnswer.textContent = `Incorrect Answers: ${incorrectAnswer}`;
+
+        let Percentage = (correctAnswer/totalQuestions)*100;
+        let displayPercent = document.getElementById('percent');
+        displayPercent.textContent = `Percentage: ${Percentage} %`;
+
+        let remarks = document.getElementById('remarks');
+
+        if(Percentage>=60){
+
+            remarks.textContent = `Remarks: Pass`;
+            
+        }
+        else{
+
+            remarks.textContent = `Remarks: Fail `;
+             
+        }
+
+        let goback = document.getElementById('back');
+        goback.addEventListener('click',goHome);
+
+        function goHome(){
+            window.location.href = "/index.html";
+        }
+     </script>
+</body>
+</html>

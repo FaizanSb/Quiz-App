@@ -1,0 +1,54 @@
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Result Container Styling */
+h1 {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    color: #333;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+}
+
+/* Special Styling for Remarks */
+#remarks {
+    font-weight: bold;
+    color: #ff5722;
+}
+#back{
+
+    color:green;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 18px;
+    padding: 10px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 330px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+
+}
+

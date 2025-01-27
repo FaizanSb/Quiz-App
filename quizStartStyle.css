@@ -1,0 +1,199 @@
+/* Basic page styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Header for player and subject names */
+.header {
+    width: 100%;
+    background-color: #2c3e50; 
+    color: white;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    
+}
+
+.header div {
+    padding: 0 20px;
+}
+
+/* Status bar for correct/incorrect/remaining */
+.status-bar {
+    width: 100%;
+    background-color: #3498db;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+.status-bar div {
+    font-weight: bold;
+}
+
+/* Quiz container */
+.quiz-container {
+    width: 100%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Quiz elements */
+#displayNumberOfQuestion {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.question-display {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+}
+
+#reverseSecond {
+    font-size: 18px;
+    color: #e74c3c;
+    margin-bottom: 20px;
+}
+
+/* Options styling */
+ul.options {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+ul.options li {
+
+    padding: 12px;
+    margin: 8px 0;
+    background-color: #ecf0f1;
+    border: 1px solid #bdc3c7;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+   
+}
+
+ul.options li:hover {
+   background-color: yellow;   /*  #3498db; */
+    color: white;
+}
+ul.options li:visited {
+    background-color: green;
+    color: white;
+}
+
+/* Submit button styling */
+button.submit-btn {
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button.submit-btn:hover {
+    background-color: #2ecc71;
+}
+
+#statusBar{
+
+    width: 700px;
+    margin-top: 20px;
+    background-color: #27ae60;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 30px;
+    color:aliceblue;
+   
+
+}
+#header{
+    
+    width: 700px;
+    background-color: #27ae60;
+    padding-left: 30px;
+    padding-top: 15px;
+    height: 30px;
+    text-size-adjust: 30;
+    margin-top: 20px;
+    color:aliceblue;
+    
+   
+}
+#subjectDisplay{
+    padding-right: 1px;
+    padding-left: 101px;
+}
+#remaningQuestion{
+    padding-right: 20px;
+    
+}
+#alert{
+    color: red;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Responsive styling */
+@media (max-width: 600px) {
+    .header, .status-bar {
+        flex-direction: column;
+        align-items: center;
+        font-size: 16px;
+    }
+
+    .header div {
+        padding: 5px;
+    }
+
+    .quiz-container {
+        padding: 15px;
+    }
+
+    ul.options li {
+        font-size: 16px;
+    }
+
+    button.submit-btn {
+        width: 100%;
+    }
+}

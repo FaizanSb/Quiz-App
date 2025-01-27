@@ -1,0 +1,39 @@
+What is the primary purpose of an operating system?
+Data Processing,Managing computer hardware and software resources,Compiling code,Editing text files
+1
+
+Which of the following is NOT a type of operating system?
+Real-time Operating System (RTOS),Time-sharing Operating System,Distributed Operating System,Compiling Operating System
+3
+
+In which scheduling algorithm does the CPU execute processes based on their arrival time?
+First-Come & First-Served (FCFS),Shortest Job Next (SJN),Round Robin (RR),Priority Scheduling
+0
+
+What is virtual memory in an operating system?
+Physical memory installed on a machine,A type of secondary storage,A technique that allows the execution of processes larger than the physical memory,A process scheduling algorithm
+2
+
+Which of the following is an example of a preemptive scheduling algorithm?
+FCFS,Shortest Job First (SJF),Round Robin,Non-preemptive Priority Scheduling
+2
+
+Which component of an OS handles input and output operations?
+Kernel,Shell,File Manager,Memory Manager
+0
+
+What does the "shell" in an operating system do?
+Manages memory,Manages hardware resources,Provides an interface for users to interact with the OS,Schedules processes for CPU
+2
+
+Which of the following is NOT a common file system format?
+NTFS,FAT32,EXT4,ARP
+3
+
+Which of the following is a feature of a multi-tasking operating system?
+Executes only one process at a time,Supports multiple processes running simultaneously,Only supports user programs,Does not require scheduling
+1
+
+Which of the following is NOT an advantage of a distributed operating system?
+Resource sharing,Increased reliability,Centralized management,Scalability
+2
